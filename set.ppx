@@ -59,13 +59,18 @@
 			<Name>Kaspersky</Name>
 		</Rule>
 		<Rule enabled="true">
-			<Action type="Direct" />
-			<Name>Default</Name>
+			<Action type="Proxy">100</Action>
+			<Targets>*.githubusercontent.com</Targets>
+			<Name>Kaspersky</Name>
 		</Rule>
 		<Rule enabled="true">
 			<Action type="Proxy">100</Action>
 			<Targets>*.joplinapp.org;*.v2ex.com;*.reddit.com;*.protonmail.com;*.name.com</Targets>
 			<Name>Others</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Name>Default</Name>
 		</Rule>
 	</RuleList>
 </ProxifierProfile>
